@@ -1,0 +1,189 @@
+@import url("https://https://fonts.google.com/specimen/Red+Hat+Display");
+/*Family: [Red Hat Display](
+https://fonts.google.com/specimen/Red+Hat+Display)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Red Hat Display',sans-serif;
+  background: url("./images/pattern-background-mobile.svg") center center/cover;
+  line-height: 1.6;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.container {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.card {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.card-img img {
+  border-top-left-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 20px;
+}
+
+.card-title {
+  margin-top: 10rem;
+  margin-bottom: 20px;
+  border-top-left-radius: 20px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+
+}
+
+.card-text {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.card-back {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  border-radius: 15px;
+
+  padding: 10px;
+}
+
+.card-back-img img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-back-text {
+  margin-right: 30px;
+  font-weight: 700;
+}
+
+.card-back-text h4:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.card-back-link a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  border: none;
+  background: hsl(245, 75%, 52%);
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.20);
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+.disable {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+  outline: none;
+
+  font-weight: 900;
+  ;
+}
+
+@media(min-width:576px) {
+  body {
+    padding: 3rem;
+    background: url("./images/pattern-background-desktop.svg") center center/cover;
+
+
+  }
+
+  .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .card-title {
+    margin-top: 24rem;
+    font-size: 2rem;
+  }
+
+  .card-text {
+    font-size: 2.4rem;
+  }
+
+  .card-back-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-back-text {
+    font-size: 1.7rem;
+    margin-right: 30%;
+  }
+
+  .card-back-link a {
+    font-size: 2rem;
+  }
+
+  .disable {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 2.1rem;
+    padding: 30px 0;
+    margin: 30px 0;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btn:focus {
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.card-back-link a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.disable:focus {
+  color: hsl(223, 47%, 23%)
+}
+
+.disable:hover {
+  color: hsl(223, 47%, 23%);
+}
